@@ -38,10 +38,8 @@ namespace CasinoSystem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-            services.AddDbContext<CasinoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddDbContext<CasinoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            var connection = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<CasinoContext>(options => options.UseSqlServer(connection));
             services.AddIdentity<ApplicationUser, CasinoRole>()
                  .AddEntityFrameworkStores<CasinoContext>()
                  .AddDefaultTokenProviders()
