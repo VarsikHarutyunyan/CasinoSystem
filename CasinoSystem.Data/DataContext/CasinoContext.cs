@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using CasinoSystem.Data.Entities;
 using CasinoSystem.Data.Entities.Base;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace CasinoSystem.Data.DataContext
 {
@@ -35,6 +36,16 @@ namespace CasinoSystem.Data.DataContext
             modelBuilder.Entity<IdentityUserLogin<int>>().ToTable("UserLogins");
 
 
+        }
+    }
+
+    public class AppUserDbContextFactory : IDesignTimeDbContextFactory<CasinoContext>
+    {
+        public CasinoContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<CasinoContext>();
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=CasinoSystem;Trusted_Connection=True;MultipleActiveResultSets=true");
+            return new CasinoContext(optionsBuilder.Options);
         }
     }
 }
