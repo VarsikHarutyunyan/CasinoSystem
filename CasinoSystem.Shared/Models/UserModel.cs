@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CasinoSystem.Shared
+namespace CasinoSystem.Shared.Models
 {
     public class UserModel
     {

@@ -55,6 +55,9 @@ namespace CasinoSystem
             services.AddTransient<IRefreshTokenService, RefreshTokenService>();
             services.AddSingleton<IRng, Rng>();
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
+            // Register other services and repositories
+
             //services.AddTransient<IGenericRepository<>, GenericRepository<>>();
             services.AddAutoMapper(new Assembly[] { typeof(AutoMapperProfile).GetTypeInfo().Assembly });
 

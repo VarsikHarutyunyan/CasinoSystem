@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using CasinoSystem.Data.Entities;
 using CasinoSystem.Data.Repository.Interfaces;
 using CasinoSystem.Services.Interfaces;
-using CasinoSystem.Shared;
+using CasinoSystem.Shared.Models;
 
 namespace CasinoSystem.Services.Services
 {

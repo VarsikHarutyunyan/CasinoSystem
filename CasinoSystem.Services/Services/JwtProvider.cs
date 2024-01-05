@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using CasinoSystem.Services.Interfaces;
 using CasinoSystem.Shared.Enums;
-using CasinoSystem.Shared;
 using Convey.Auth;
+using CasinoSystem.Shared.Models;
 
 namespace CasinoSystem.Services.Services
 {

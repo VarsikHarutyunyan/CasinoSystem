@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CasinoSystem.Shared
+namespace CasinoSystem.Shared.Models
 {
     public class UserCreateModel
     {

@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CasinoSystem.Data.Entities;
-using CasinoSystem.Shared;
 using CasinoSystem.Shared.Enums;
+using CasinoSystem.Shared.Models;
 
 namespace CasinoSystem.AutoMappers
 {

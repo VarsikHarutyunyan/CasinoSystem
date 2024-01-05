@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using CasinoSystem.Services.Interfaces;
-using CasinoSystem.Shared;
+using CasinoSystem.Shared.Models;
 
 namespace CasinoSystem.Api.Controllers
 {

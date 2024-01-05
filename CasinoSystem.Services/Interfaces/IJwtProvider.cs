@@ -4,8 +4,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CasinoSystem.Shared;
 using CasinoSystem.Shared.Enums;
+using CasinoSystem.Shared.Models;
 
 namespace CasinoSystem.Services.Interfaces
 {

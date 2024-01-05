@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CasinoSystem.Shared
+namespace CasinoSystem.Shared.Models
 {
     public class SignIn
     {

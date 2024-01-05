@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace CasinoSystem.Shared
+namespace CasinoSystem.Shared.Models
 {
     public static class Regexes
     {

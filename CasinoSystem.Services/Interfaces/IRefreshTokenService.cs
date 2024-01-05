@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CasinoSystem.Shared;
+using CasinoSystem.Shared.Models;
 
 namespace CasinoSystem.Services.Interfaces
 {
